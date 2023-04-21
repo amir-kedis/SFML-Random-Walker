@@ -24,32 +24,32 @@ void RandomWalker::Update()
 	switch (direction)
 	{
 	case 0:
-		position.x += 5.f;
+		position.x += 1.f;
 		break;
 	case 1:
-		position.x -= 5.f;
+		position.x -= 1.f;
 		break;
 	case 2:
-		position.y += 5.f;
+		position.y += 1.f;
 		break;
 	case 3:
-		position.y -= 5.f;
+		position.y -= 1.f;
 		break;
 	case 4:
-		position.x += 5.f;
-		position.y += 5.f;
+		position.x += 1.f;
+		position.y += 1.f;
 		break;
 	case 5:
-		position.x -= 5.f;
-		position.y -= 5.f;
+		position.x -= 1.f;
+		position.y -= 1.f;
 		break;
 	case 6:
-		position.x += 5.f;
-		position.y -= 5.f;
+		position.x += 1.f;
+		position.y -= 1.f;
 		break;
 	case 7:
-		position.x -= 5.f;
-		position.y += 5.f;
+		position.x -= 1.f;
+		position.y += 1.f;
 		break;
 	}
 
