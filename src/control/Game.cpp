@@ -53,11 +53,13 @@ Game::~Game()
 void Game::Update()
 {
 	UpdatePollEvents();
+	randomWalker.Update();
 }
 
 void Game::Render()
 {
 	// window->clear(sf::Color(34, 34, 34));
+	randomWalker.Render(window);
 	window->display();
 }
 

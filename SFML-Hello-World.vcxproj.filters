@@ -21,9 +21,15 @@
     <ClCompile Include="src\control\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\game-objects\RandomWalker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\control\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game-objects\RandomWalker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,6 +6,7 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 
+#include "../game-objects/RandomWalker.h"
 
 class Game
 {
@@ -14,6 +15,9 @@ private:
 	sf::RenderWindow* window;
 	sf::Event event;
 	sf::VideoMode videoMode;
+
+	// Game Objects
+	RandomWalker randomWalker;
 
 	/// Initialization functions
 	void InitVariables();
