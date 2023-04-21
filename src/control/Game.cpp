@@ -11,6 +11,7 @@ void Game::InitWindow()
 	videoMode.height = 720;
 	videoMode.width = 1080;
 	window = new sf::RenderWindow(videoMode, "Hello World Game", sf::Style::Titlebar | sf::Style::Close);
+	window->setFramerateLimit(60);
 }
 
 /// Internal Functions
@@ -56,7 +57,7 @@ void Game::Update()
 
 void Game::Render()
 {
-	window->clear(sf::Color(34, 34, 34));
+	// window->clear(sf::Color(34, 34, 34));
 	window->display();
 }
 
@@ -65,4 +66,9 @@ void Game::Render()
 const bool Game::IsRunning() const
 {
 	return window->isOpen();
+}
+
+sf::VideoMode Game::GetVideoMode() const
+{
+	return videoMode;
 }

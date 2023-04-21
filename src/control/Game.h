@@ -33,5 +33,6 @@ public:
 
 	/// Game Accessors
 	const bool IsRunning() const;
+	sf::VideoMode GetVideoMode() const;
 };
 
